@@ -20,13 +20,6 @@
       "max_limit": 20,
       "out": "Sleep statement Check.You used {} sleep statements, should be between {} < {}",
       "indicator": "USED_THREAD_SLEEP"
-    },
-    {
-      "is_enabled": true,
-      "min_limit": 3,
-      "max_limit": null,
-      "out": "System Out Printline or Logging Check.You used {} System out Printline statements, should be between {} < {}",
-      "indicator": "USED_SOPL"
     }
   ],
   "instruction_set": [
