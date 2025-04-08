@@ -60,6 +60,7 @@ public class TestCases {
         Thread.sleep(5000);
     }
 
+    // test case2
     public void testCase02() throws InterruptedException {
         System.out.println("Start Test case: testCase02");
         driver.get("https://leetcode.com/");
@@ -86,7 +87,6 @@ public class TestCases {
 
             WebElement row = rows.get(i);
             List<WebElement> cells = row.findElements(By.xpath(".//div[@role='cell']"));
-
             for (int j = 1; j < cells.size(); j++) {
                 System.out.println(cells.get(j).getText());
             }
@@ -95,12 +95,12 @@ public class TestCases {
         }
     }
 
+    
     public void testCase03() throws InterruptedException {
         System.out.println("Start Test case: testCase03");
         driver.get("https://leetcode.com/");
         WebElement questionsLink = driver.findElement(By.xpath("//p[text()='View Questions ']"));
         questionsLink.click();
-
         WebElement firstProblem = driver.findElement(By.xpath("//a[text()='Two Sum']"));
         firstProblem.click();
 
