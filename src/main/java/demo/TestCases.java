@@ -122,8 +122,12 @@ public class TestCases {
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@data-layout-path= '/ts0/tb3']")));
         submissionButton.click();
 
-        WebElement RegisterButton = driver.findElement(By.xpath("//a[text()='Register or Sign In']"));
-        if (RegisterButton.isDisplayed()) {
+        WebElement registerButton = wait
+                .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Register or Sign In']")));
+
+       
+        String message = registerButton.getText();
+        if (message.contains("Register or Sign In")) {
             System.out.println("Verify that \"Register or Sign In\" is displaying");
         }
     }

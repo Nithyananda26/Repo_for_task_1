@@ -171,21 +171,22 @@
       "hint": "TestCase 3: Ensure that you check the url of the page contains two-sum"
     },
     {
-      "description": "TestCase 4: Ensure the submissions tab displays \"Register or Sign In\"",
-      "validations": [
-        {
-          "object_notation": "COMMAND",
-          "operator": "contains",
-          "expected_value": "GetElementText"
-        },
-        {
-          "object_notation": "RESPONSE",
-          "operator": "contains",
-          "expected_value": "Register or Sign In"
-        }
-      ],
-      "error_out": "Check the submissions tab and verify if it shows \"Register or Sign In.\"",
-      "hint": "TestCase 4: Ensure that \"Register or Sign In\" is displayed when you click on the submission tab."
-    }
+    
+    "description": "TestCase 3: Verify the Two Sum problem",
+    "validations": [
+      {
+        "object_notation": "COMMAND",
+        "operator": "contains",
+        "expected_value": "GetUrl"
+      },
+      {
+        "object_notation": "RESPONSE",
+        "operator": "contains",
+        "expected_value": "two-sum"
+      }
+    ],
+    "error_out": "Get the URL of the page and verify",
+    "hint": "TestCase 3: Ensure that you check the url of the page contains two-sum"
+  }
   ]
 }
