@@ -45,8 +45,8 @@ public class TestCases {
 
     public void endTest() {
         System.out.println("End Test: TestCases");
-        // driver.close();
-        // driver.quit();
+        driver.close();
+        driver.quit();
 
     }
 
